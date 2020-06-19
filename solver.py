@@ -12,7 +12,6 @@ length = wordgrid.index('\n') + 1
 characters = [(letter, divmod(index, length)) for  index, letter in enumerate (wordgrid)]
 
 wordlines = {}
-# These next lines just  directions so you can tell which direction the word is going
 directions = {'🡣':0, '🡧':-1, '🡦':1}
 
 for word_direction, directions in directions.items():
